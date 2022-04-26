@@ -5,7 +5,7 @@ function UseMemoExample() {
   const [number, setNumber] = useState(1)
   const [inc, setInc] = useState(0)
 
-//   const sqrt = getSqrt(number)
+  //   const sqrt = getSqrt(number)
   const sqrt = useMemo(() => getSqrt(number), [number])
 
   const renders = useRef(1)
